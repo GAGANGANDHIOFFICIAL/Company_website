@@ -1,0 +1,189 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #0b0c10;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 60px;
+  position: sticky;
+  top: 0;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  flex-direction: column;
+width: 10px;
+height: 10px;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.brand span {
+  color: #f4b41a; /* yellow accent like LeapLogic */
+}
+
+.tagline {
+  font-size: 0.7rem;
+  color: #aaa;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f4b41a;
+}
+
+/* Try Now Button */
+.btn-try {
+  background-color: #f4b41a;
+  color: #000 !important;
+  padding: 8px 16px;
+  border-radius: 3px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-try:hover {
+  background-color: #ffc107;
+}
+/* --- Hero Banner Styles --- */
+.hero-banner {
+    /* Replace 'path/to/image_6374f7.jpg' with the actual path to your banner image */
+    background-image: url('path/to/image_6374f7.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Sets the height of the banner. Adjust as needed. */
+    height: 500px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px; /* Padding on the sides */
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1200px; /* Constrains content width on large screens */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Optional: A subtle dark overlay on the content area for contrast */
+    padding: 20px;
+}
+
+/* --- Text Styles --- */
+.text-block {
+    color: white;
+    max-width: 50%; /* Control the width of the text column */
+}
+
+.text-block h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.text-block p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #ccc; /* Slightly lighter white for body text */
+}
+
+.aws-color {
+    color: #ff9900; /* AWS/Accent color for the word 'AWS' */
+}
+
+/* --- Button Styles (BOOK A DEMO) --- */
+.button-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white; /* Outline style */
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: white;
+    color: black;
+}
+
+.arrow-icon {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+/* --- AWS Badge Styles --- */
+.badge-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.aws-badge {
+    width: 150px; /* Adjust size as necessary */
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white border */
+    border-radius: 8px;
+}
+.AWS-image {
+    /* 1. Set a Maximum Width */
+    /* This constrains the container so it doesn't stretch edge-to-edge */
+    max-width: 1200px; /* Adjust this pixel value as needed */
+    width: 80%;       /* Use 80% as a responsive fallback for smaller screens */
+
+    /* 2. Center the Container */
+    /* Setting left and right margins to 'auto' centers a block element */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Optional: Add some space above/below the element */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.AWS-image img {
+    /* Ensures the image fills the constrained width of its container */
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures it behaves as a block element for consistent spacing */
+}
